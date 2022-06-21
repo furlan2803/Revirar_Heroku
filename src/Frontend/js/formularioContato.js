@@ -29,7 +29,7 @@ btn.addEventListener('touchstart', menu);
 const tableBody = document.querySelector("#table-body-contato");
 
 $.ajax({
-    url: "http://127.0.0.1:3094/formcontatoselect",
+    url: "http://127.0.0.1:3081/formcontatoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -96,7 +96,7 @@ function contatoform() {
    const assunto  = document.getElementById("assunto").value;
 
     var settings = {
-        "url": "http://127.0.0.1:3094/formcontatoinsert",
+        "url": "http://127.0.0.1:3081/formcontatoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -147,7 +147,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "http://127.0.0.1:3094/formcontatodelete",
+        "url": "http://127.0.0.1:3081/formcontatodelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -165,7 +165,7 @@ function deleteAssistido(id){
 
 function viewform(id){
     $.ajax({
-        url: "http://127.0.0.1:3094/formcontatoselect",
+        url: "http://127.0.0.1:3081/formcontatoselect",
         type: 'GET',
         success: data => {
          data.forEach(element => {

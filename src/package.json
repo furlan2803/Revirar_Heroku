@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "sqlite3": "^5.0.8"
+  },
+  "name": "src",
+  "version": "1.0.0",
+  "main": "app_81.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": "^16.14.2"
+  }
+}

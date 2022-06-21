@@ -34,7 +34,7 @@ function fecharModalAbo() {
 const tableBody = document.querySelector("#table-body-cadastramento"); //Cria uma constante da tabela vazia pelo id no html
 
 $.ajax({ //Sintax do AJAX Jquery
-    url: "http://127.0.0.1:3094/loginselect2", // URL definido no endpoint do node(node app_xx.js)
+    url: "http://127.0.0.1:3081/loginselect2", // URL definido no endpoint do node(node app_xx.js)
     type: 'GET', // Tipo de requisição do endpoint
     success: data => { // Sucesso do get pega a data do banco de dados
         data.forEach(element => { // pega o tamanho do banco de dados e cria o parametro element
@@ -59,7 +59,7 @@ function salvarAssAbo() { //Função do botão de salvar chamado pelo onclick do
 
 
     var settings = { //armazena o endpoint de insert dentro de uma variavel
-        "url": "http://127.0.0.1:3094/logininsert",
+        "url": "http://127.0.0.1:3081/logininsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -100,7 +100,7 @@ function fecharModall(id) { // função do modal criado agr do delete (sempre ch
 function deletedoc(id) { // função dentro do modal de confirmar exclusão
         $.ajax({ // ajax com metodos do endpoint
             type: 'POST',
-            url: "http://127.0.0.1:3094/logindelete",
+            url: "http://127.0.0.1:3081/logindelete",
             data: {IDlogin: id},
         })
 }
