@@ -34,7 +34,7 @@ function fecharModalFreq() {
 const tableBodyy = document.querySelector("#table-body-frequencia"); //Cria uma constante da tabela vazia pelo id no html
 
 $.ajax({ //Sintax do AJAX Jquery
-    url: "http://127.0.0.1:3081/fichafrequenciaselect", // URL definido no endpoint do node(node app_xx.js)
+    url: "revirar-projeto4.herokuapp.com/fichafrequenciaselect", // URL definido no endpoint do node(node app_xx.js)
     type: 'GET', // Tipo de requisição do endpoint
     success: data => {// Sucesso do get pega a data do banco de dados
         data.data.forEach(element => { // pega o tamanho do banco de dados e cria o parametro element
@@ -68,7 +68,7 @@ function salvarAssFreq() { //Função do botão de salvar chamado pelo onclick d
 
 
     var settings = { //armazena o endpoint de insert dentro de uma variavel
-        "url": "http://127.0.0.1:3081/fichafrequenciainsert",
+        "url": "revirar-projeto4.herokuapp.com/fichafrequenciainsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -113,7 +113,7 @@ function fecharModall(id) { // função do modal criado agr do delete (sempre ch
 function deletedoc(id) { // função dentro do modal de confirmar exclusão
         $.ajax({ // ajax com metodos do endpoint
             type: 'POST',
-            url: "http://127.0.0.1:3081/fichafrequenciadelete",
+            url: "revirar-projeto4.herokuapp.com/fichafrequenciadelete",
             data: {IDFrequencia: id},
         })
 }
@@ -129,7 +129,7 @@ function disableField(number){ // Função que desabilita para editar (No seu cu
 function editDoacao(id) {
     console.log(id);
     $.ajax({
-        url: "http://127.0.0.1:3081/fichafrequenciaselect",
+        url: "revirar-projeto4.herokuapp.com/fichafrequenciaselect",
         type: 'GET',
         success: data => {
             data.data.forEach(element => {
@@ -215,7 +215,7 @@ function editVal(id) {
 
     $.ajax({
         type: 'POST',
-        url: 'http://127.0.0.1:3081/fichafrequenciaupdate',
+        url: 'revirar-projeto4.herokuapp.com/fichafrequenciaupdate',
         data: {IDFrequencia: id, nomeFreq: edit1, dataFreq: edit2, horarioFreq: edit3, banhoFreq: edit4, lancheFreq: edit5, roupaFreq: edit6},
     }).done(function () {
         console.log("aq")
@@ -233,7 +233,7 @@ function editVal(id) {
 
 function viewCadastro(id) {
     $.ajax({
-        url: "http://127.0.0.1:3081/fichafrequenciaselect",
+        url: "revirar-projeto4.herokuapp.com/fichafrequenciaselect",
         type: 'GET',
         success: data => {
             data.data.forEach(element => {

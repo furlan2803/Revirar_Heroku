@@ -29,7 +29,7 @@ btn.addEventListener('touchstart', menu);
 const tableBody = document.querySelector("#table-body-parceiro");
 
 $.ajax({
-    url: "http://127.0.0.1:3081/formparceiroselect",
+    url: "revirar-projeto4.herokuapp.com/formparceiroselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -97,7 +97,7 @@ function parceiros() {
    const assunto  = document.getElementById("mensagem").value;
 
     var settings = {
-        "url": "http://127.0.0.1:3081/formparceiroinsert",
+        "url": "revirar-projeto4.herokuapp.com/formparceiroinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -149,7 +149,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "http://127.0.0.1:3081/formparceirodelete",
+        "url": "revirar-projeto4.herokuapp.com/formparceirodelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -167,7 +167,7 @@ function deleteAssistido(id){
 
 function viewform(id){
     $.ajax({
-        url: "http://127.0.0.1:3081/formparceiroselect",
+        url: "revirar-projeto4.herokuapp.com/formparceiroselect",
         type: 'GET',
         success: data => {
          data.forEach(element => {

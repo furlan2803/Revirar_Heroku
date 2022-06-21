@@ -9,7 +9,7 @@ function fecharModal() {
 const histvoluntarios = document.querySelector("#table-historico-voluntarios");
 
 $.ajax({
-    url: "http://127.0.0.1:3081/historicovoluntariosselect",
+    url: "revirar-projeto4.herokuapp.com/historicovoluntariosselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -39,7 +39,7 @@ function saveHisVol() {
 
 
     var settings = {
-        "url": "http://127.0.0.1:3081/historicovoluntariosinsert",
+        "url": "revirar-projeto4.herokuapp.com/historicovoluntariosinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -82,14 +82,14 @@ function fecharModall(id) {
 function deletehisvol(id) {
         $.ajax({
             type: 'POST',
-            url: "http://127.0.0.1:3081/historicovoluntariosdelete",
+            url: "revirar-projeto4.herokuapp.com/historicovoluntariosdelete",
             data: {IDHistoricoVol: id},
         })
     }
 
 function edithistoricovol(id) {
     $.ajax({
-        url: "http://127.0.0.1:3081/historicovoluntariosselect",
+        url: "revirar-projeto4.herokuapp.com/historicovoluntariosselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -128,7 +128,7 @@ function editVal(id) {
     var yr = document.getElementById('edittt').value;
     $.ajax({
         type: 'POST',
-        url: 'http://127.0.0.1:3081/historicovoluntariosupdate',
+        url: 'revirar-projeto4.herokuapp.com/historicovoluntariosupdate',
         data: {IDHistoricoVol: id, tituloHisVol: yr},
     }).done(function () {
         console.log("aq")

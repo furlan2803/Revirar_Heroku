@@ -129,7 +129,7 @@ function fecharModal() {
 const tableBodyy = document.querySelector("#table-body-doacao");
 
 $.ajax({
-    url: "http://127.0.0.1:3081/doacaoselect",
+    url: "revirar-projeto4.herokuapp.com/doacaoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -170,7 +170,7 @@ function salvarAss() {
 
 
     var settings = {
-        "url": "http://127.0.0.1:3081/doacaoinsert",
+        "url": "revirar-projeto4.herokuapp.com/doacaoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -219,7 +219,7 @@ function fecharModall() {
 function deletedoc(id) {
         $.ajax({
             type: 'POST',
-            url: "http://127.0.0.1:3081/doacaodelete",
+            url: "revirar-projeto4.herokuapp.com/doacaodelete",
             data: {IDDoacao: id},
         })
     }
@@ -255,7 +255,7 @@ function editVal(id) {
     var yr = document.getElementById('edittt').value;
     $.ajax({
         type: 'POST',
-        url: 'http://127.0.0.1:3081/doacaoupdate',
+        url: 'revirar-projeto4.herokuapp.com/doacaoupdate',
         data: {IDDoacao: id, valorDoacao: yr},
     }).done(function () {
         console.log("aq")
@@ -273,7 +273,7 @@ function editVal(id) {
 
 function viewDoacao(id) {
     $.ajax({
-        url: "http://127.0.0.1:3081/doacaoselect",
+        url: "revirar-projeto4.herokuapp.com/doacaoselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {

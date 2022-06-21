@@ -33,7 +33,7 @@ function fecharModal() {
 const tableBodyy = document.querySelector("#table-body-pia");
 
 $.ajax({
-    url: "http://127.0.0.1:3081/piaselect",
+    url: "revirar-projeto4.herokuapp.com/piaselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -116,7 +116,7 @@ function salvarAss() {
 
 
     var settings = {
-        "url": "http://127.0.0.1:3081/piainsert",
+        "url": "revirar-projeto4.herokuapp.com/piainsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -210,7 +210,7 @@ function fecharModall(id) {
 function deletedoc(id) {
         $.ajax({
             type: 'POST',
-            url: "http://127.0.0.1:3081/piadelete",
+            url: "revirar-projeto4.herokuapp.com/piadelete",
             data: {IDPIA: id},
         })
         $('#myModal' + id).remove();
@@ -238,7 +238,7 @@ function testee(){
 function editDoacao(id) {
     console.log(id);
     $.ajax({
-        url: "http://127.0.0.1:3081/piaselect",
+        url: "revirar-projeto4.herokuapp.com/piaselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -598,7 +598,7 @@ function editVal(id) {
 
     $.ajax({
         type: 'POST',
-        url: 'http://127.0.0.1:3081/piaupdate',
+        url: 'revirar-projeto4.herokuapp.com/piaupdate',
         data: {IDPIA: id,
             nomePIA: nomePIA1,
             nomeSocPIA: nomeSocPIA1,
@@ -671,7 +671,7 @@ function editVal(id) {
 
 function viewDoacao(id) {
     $.ajax({
-        url: "http://127.0.0.1:3081/piaselect",
+        url: "revirar-projeto4.herokuapp.com/piaselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {

@@ -5,7 +5,7 @@ function login(){
     var password = document.getElementById("password").value;
 
     $.ajax({
-        url: "http://127.0.0.1:3081/loginselect",
+        url: "revirar-projeto4.herokuapp.com/loginselect",
         type: 'POST',
         data:{email: e_mail, senha: password},
         success: data => {

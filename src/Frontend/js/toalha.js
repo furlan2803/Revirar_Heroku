@@ -34,7 +34,7 @@ function fecharModal() {
 const tableBodyy = document.querySelector("#table-body-toalha"); //Cria uma constante da tabela vazia pelo id no html
 
 $.ajax({ //Sintax do AJAX Jquery
-    url: "http://127.0.0.1:3081/selecttoalha", // URL definido no endpoint do node(node app_xx.js)
+    url: "revirar-projeto4.herokuapp.com/selecttoalha", // URL definido no endpoint do node(node app_xx.js)
     type: 'GET', // Tipo de requisição do endpoint
     success: data => { // Sucesso do get pega a data do banco de dados
         data.forEach(element => { // pega o tamanho do banco de dados e cria o parametro element
@@ -60,7 +60,7 @@ function salvarAss() { //Função do botão de salvar chamado pelo onclick do bo
 
 
     var settings = { //armazena o endpoint de insert dentro de uma variavel
-        "url": "http://127.0.0.1:3081/toalhainsert",
+        "url": "revirar-projeto4.herokuapp.com/toalhainsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -101,7 +101,7 @@ function fecharModall(id) { // função do modal criado agr do delete (sempre ch
 function deletedoc(id) { // função dentro do modal de confirmar exclusão
         $.ajax({ // ajax com metodos do endpoint
             type: 'POST',
-            url: "http://127.0.0.1:3081/toalhadelete",
+            url: "revirar-projeto4.herokuapp.com/toalhadelete",
             data: {IDToalha: id},
         })
 }
@@ -116,7 +116,7 @@ function disableField(number){ // Função que desabilita para editar (No seu cu
 
 function editDoacao(id) { // funçaõ do botão criado no primeiro select do sql
     $.ajax({ //definição dos metodos
-        url: "http://127.0.0.1:3081/selecttoalha",
+        url: "revirar-projeto4.herokuapp.com/selecttoalha",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -168,7 +168,7 @@ function editVal(id) {// função de editar no modal criado acima
 
     $.ajax({ // ajax com metodos do endpoint de update
         type: 'POST',
-        url: 'http://127.0.0.1:3081/toalhaupdate',
+        url: 'revirar-projeto4.herokuapp.com/toalhaupdate',
         data: {IDToalha: id, nomeToalha: edit1, numeroToalha: edit2}, // primeiro vem o nome da coluna do sql e depois o nome do var criado acima
     }).done(function () {
         console.log("aq")
