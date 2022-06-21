@@ -2,13 +2,13 @@
 const express = require('express'); 
 const app = express();
 const cors = require("cors");
-app.use(express.static("frontend/"));
-app.use(express.static("frontend/páginas"));
+app.use(express.static("src/frontend/"));
+app.use(express.static("src/frontend/páginas"));
 app.use(cors());
 
 const port = process.env.PORT || 3081;
 const sqlite3 = require('sqlite3').verbose(); 
-const DBPATH = 'Backend/revirar.db'; 
+const DBPATH = 'src/Backend/revirar.db'; 
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
