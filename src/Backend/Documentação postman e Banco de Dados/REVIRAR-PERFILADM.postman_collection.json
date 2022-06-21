@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "96a82500-2e16-46cf-b69f-517382f428c6",
+		"name": "REVIRAR-PERFILADM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-PERFIL_ADM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDPerfil",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/perfiladmselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"perfiladmselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-PERFIL_ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "perfilADM",
+							"value": "Administrador do sistema",
+							"type": "text"
+						},
+						{
+							"key": "imagemADM",
+							"value": "https://www.google.com/search?q=imagem+pessoa+icon&tbm=isch&ved=2ahUKEwivxMWp3_33AhXRN7kGHQi5Bm0Q2-cCegQIABAA&oq=imagem+pessoa+icon&gs_lcp=CgNpbWcQAzIGCAAQHhAIOgUIABCABDoECAAQHlDjCVjKQGDdQmgLcAB4AIABfYgBvxKSAQQ0LjE4mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=HcCPYu_BG9Hv5OUPiPKa6AY&bih=962&biw=1920&client=opera&hs=r20#imgrc=CjjvAIrmeyYV-M",
+							"type": "text"
+						},
+						{
+							"key": "descricaoADM",
+							"value": "Funcionário Temporário",
+							"type": "text"
+						},
+						{
+							"key": "nomePerfilADM",
+							"value": "Mariana Silva de Paula",
+							"type": "text"
+						},
+						{
+							"key": "telefonePerfilADM",
+							"value": "(11) 94339865",
+							"type": "text"
+						},
+						{
+							"key": "emailPerfilADM",
+							"value": "mariana@revirar.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/perfiladminsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"perfiladminsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-PERFIL_ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDPerfil",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/perfiladmdelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"perfiladmdelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-PERFIL_ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "perfilADM",
+							"value": "Administrador",
+							"type": "text"
+						},
+						{
+							"key": "IDPerfil",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/perfiladmupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"perfiladmupdate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

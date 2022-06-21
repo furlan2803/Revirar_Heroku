@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4918f2ce61.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
+    <link rel="stylesheet" href="../css/iniadm.css">
+</head>
+<body>
+  <div id="myModal"class="modal customizar">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content customize">
+        <div class="modal-header">
+          <h5 class="modal-title">Nova Doação</h5>
+        </div>
+        <div class="modal-body">
+          <p>Fazer o cadastro de uma nova doação.</p>
+        </div>
+        <form>
+          <div class="mb-1">
+            <label for="exampleInputEmail1" class="form-label"></label>Nome:
+            <input type="text" class="form-control" name="nomePia">
+          </div>
+          <div class="mb-2">
+            <label for="exampleInputEmail1" class="form-label"></label>Nome Social:
+            <input type="text" class="form-control" name="nomeSocPia">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"></label>Tecnico:
+            <input type="text" class="form-control" name="tecnicoPia">
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label"></label>Filiação:
+            <input  type="text" class="form-control" id="inputdateDoac" name="filiacaoPia">
+          </div>
+          <div class="mb-5">
+            <label for="exampleInputEmail1" class="form-label"></label>Data Nascimento:
+            <input  type="date" class="form-control" id="inputdateDoac" name="dataNascPia">
+          </div>
+          <div class="mb-6">
+            <label for="exampleInputEmail1" class="form-label"></label>Local:
+            <input  type="text" class="form-control" id="inputcompro" name="localPia">
+          </div>
+          <div class="mb-7">
+            <label for="exampleInputEmail1" class="form-label"></label>Sexo:
+            <select class="form-select" aria-label="Default select example" id="sexoPIA">
+              <option selected>Selecionar</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+          </div>
+          <div class="mb-8">
+            <label for="exampleInputEmail1" class="form-label"></label>Estado Civil:
+            <input  type="Text" class="form-control" id="inputcompro" name="estadoCivilPia">
+          </div>
+          <div class="mb-9">
+            <label for="exampleInputEmail1" class="form-label"></label>Raça:
+            <select class="form-select" aria-label="Default select example" id="racaPIA">
+              <option selected>Selecionar</option>
+              <option value="Branca">Branca</option>
+              <option value="Negra">Negra</option>
+              <option value="Parda">Parda</option>
+              <option value="Amarela">Amarela</option>
+            </select>
+          </div>
+          <div class="mb-10">
+            <label for="exampleInputEmail1" class="form-label"></label>Religião:
+            <input  type="Text" class="form-control" id="inputcompro" name="religiaoPia">
+          </div>
+          <div class="mb-11">
+            <label for="exampleInputEmail1" class="form-label"></label>Escolaridade:
+            <input  type="Text" class="form-control" id="inputcompro" name="escolaridadePia">
+          </div>
+          <div class="mb-12">
+            <label for="exampleInputEmail1" class="form-label"></label>RG:
+            <input  type="Text" class="form-control" id="inputcompro" name="rgPia">
+          </div>
+          <div class="mb-13">
+            <label for="exampleInputEmail1" class="form-label"></label>Emissão:
+            <input  type="Text" class="form-control" id="inputcompro" name="emissaoPia">
+          </div>
+          <div class="mb-14">
+            <label for="exampleInputEmail1" class="form-label"></label>Orgão Emissor:
+            <input  type="Text" class="form-control" id="inputcompro" name="orgaoRgPia">
+          </div>
+          <div class="mb-15">
+            <label for="exampleInputEmail1" class="form-label"></label>Certidão de nascimento/casamento:
+            <input  type="Text" class="form-control" id="inputcompro" name="certPia">
+          </div>
+          <div class="mb-16">
+            <label for="exampleInputEmail1" class="form-label"></label>Livro:
+            <input  type="Text" class="form-control" id="inputcompro" name="livroPia">
+          </div>
+          <div class="mb-17">
+            <label for="exampleInputEmail1" class="form-label"></label>Folha:
+            <input  type="Text" class="form-control" id="inputcompro" name="folhaPia">
+          </div>
+          <div class="mb-18">
+            <label for="exampleInputEmail1" class="form-label"></label>CPF:
+            <input  type="Text" class="form-control" id="inputcompro" name="cpfPia">
+          </div>
+          <div class="mb-19">
+            <label for="exampleInputEmail1" class="form-label"></label>PIS:
+            <input  type="Text" class="form-control" id="inputcompro" name="pisPia">
+          </div>
+          <div class="mb-20">
+            <label for="exampleInputEmail1" class="form-label"></label>Reservista:
+            <input  type="Text" class="form-control" id="inputcompro" name="reservistaPia">
+          </div>
+          <div class="mb-21">
+            <label for="exampleInputEmail1" class="form-label"></label>Titulo do Eleitor:
+            <input  type="Text" class="form-control" id="inputcompro" name="eleitorPia">
+          </div>
+          <div class="mb-22">
+            <label for="exampleInputEmail1" class="form-label"></label>Seção:
+            <input  type="Text" class="form-control" id="inputcompro" name="secaoPia">
+          </div>
+          <div class="mb-23">
+            <label for="exampleInputEmail1" class="form-label"></label>Zona:
+            <input  type="Text" class="form-control" id="inputcompro" name="zonaPia">
+          </div>
+          <div class="mb-24">
+            <label for="exampleInputEmail1" class="form-label"></label>Carteira de trabalho (CTPS):
+            <input  type="Text" class="form-control" id="inputcompro" name="ctpsPia">
+          </div>
+          <div class="mb-25">
+            <label for="exampleInputEmail1" class="form-label"></label>Série:
+            <input  type="Text" class="form-control" id="inputcompro" name="serieCtpsPia">
+          </div>
+          <div class="mb-26">
+            <label for="exampleInputEmail1" class="form-label"></label>Emissão/UF:
+            <input  type="Text" class="form-control" id="inputcompro" name="emissaoCtpsPia">
+          </div>
+          <div class="mb-28">
+            <label for="exampleInputEmail1" class="form-label"></label>Referência de endereço:
+            <input  type="Text" class="form-control" id="inputcompro" name="refEndePia">
+          </div>
+          <div class="mb-29">
+            <label for="exampleInputEmail1" class="form-label"></label>Tipo:
+            <input  type="Text" class="form-control" id="inputcompro" name="tipoPia">
+          </div>
+          <div class="mb-30">
+            <label for="exampleInputEmail1" class="form-label"></label>Rua:
+            <input  type="Text" class="form-control" id="inputcompro" name="ruaPia">
+          </div>
+          <div class="mb-31">
+            <label for="exampleInputEmail1" class="form-label"></label>Fone:
+            <input  type="Text" class="form-control" id="inputcompro" name="fonePia">
+          </div>
+          <div class="mb-32">
+            <label for="exampleInputEmail1" class="form-label"></label>Bairro:
+            <input  type="Text" class="form-control" id="inputcompro" name="bairroPia">
+          </div>
+          <div class="mb-33">
+            <label for="exampleInputEmail1" class="form-label"></label>Municipio:
+            <input  type="Text" class="form-control" id="inputcompro" name="municipioPia">
+          </div>
+          <div class="mb-34">
+            <label for="exampleInputEmail1" class="form-label"></label>Profissão:
+            <input  type="Text" class="form-control" id="inputcompro" name="profissaoPia">
+          </div>
+          <div class="mb-35">
+            <label for="exampleInputEmail1" class="form-label"></label>Tipo de trabalho:
+            <select class="form-select" aria-label="Default select example" id="tipsTrabPIA">
+              <option selected>Selecionar</option>
+              <option value="Trabalho Formal">Trabalho Formal</option>
+              <option value="Trabalho Informal">Trabalho Informal</option>
+              <option value="Desempregado">Desempregado</option>
+            </select>
+          </div>
+          <div class="mb-36">
+            <label for="exampleInputEmail1" class="form-label"></label>Atividade profissional:
+            <input  type="Text" class="form-control" id="inputcompro" name="atvProfPia">
+          </div>
+          <div class="mb-38">
+            <label for="exampleInputEmail1" class="form-label"></label>Renda Mensal:
+            <input  type="Text" class="form-control" id="inputcompro" name="rendaMensalPia">
+          </div>
+          <div class="mb-39">
+            <label for="exampleInputEmail1" class="form-label"></label>PTR´s:
+            <select class="form-select" aria-label="Default select example" id="ptrsPIA">
+              <option selected>Selecionar</option>
+              <option value="BF">BF</option>
+              <option value="RC">RC</option>
+              <option value="RM">RM</option>
+            </select>
+          </div>
+          <div class="mb-40">
+            <label for="exampleInputEmail1" class="form-label"></label>Empresa:
+            <input  type="Text" class="form-control" id="inputcompro" name="empresaPia">
+          </div>
+          <div class="mb-41">
+            <label for="exampleInputEmail1" class="form-label"></label>Beneficio:
+            <select class="form-select" aria-label="Default select example" id="benefPIA" onChange="upBeneficio()">
+              <option selected>Selecionar</option>
+              <option value="Aposentado">Aposentado</option>
+              <option value="Aposentado por invalidez">Aposentado por invalidez</option>
+              <option value="Beneficiario BPC">Beneficiario BPC</option>
+              <option value="Sem Beneficio">Sem Beneficio</option>
+            </select>
+          </div>
+          <div class="mb-42">
+            <label for="exampleInputEmail1" class="form-label"></label>Valor do benefício:
+            <input disabled type="Text" class="form-control" id="valorbene" name="valorBenePia">
+          </div>
+          <div class="mb-43">
+            <label for="exampleInputEmail1" class="form-label"></label>Deficiência:
+            <select class="form-select" aria-label="Default select example" id="deficienciaPIA" onChange="upDeficiencia()">
+              <option selected>Selecionar</option>
+              <option value="Deficiente Físico">Deficiente Físico</option>
+              <option value="Transtornos de Ordem Psíquica">Transtornos de Ordem Psíquica</option>
+              <option value="Sem deficiência">Sem deficiência</option>
+            </select>
+          </div>
+          <div class="mb-44">
+            <label for="exampleInputEmail1" class="form-label"></label>Especifique:
+            <input disabled type="Text" class="form-control" id="especifiqueDefi" name="especiDefPia">
+          </div>
+          <div class="mb-45">
+            <label for="exampleInputEmail1" class="form-label"></label>Problemas de Saúde:
+            <select class="form-select" aria-label="Default select example" id="problemSauPIA" onChange="upSaude()">
+              <option selected>Selecionar</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+          <div class="mb-46">
+            <label for="exampleInputEmail1" class="form-label"></label>Especifique Problema de saude:
+            <input disabled type="Text" class="form-control" id="especSaude" name="especiSauPia">
+          </div>
+          <div class="mb-47">
+            <label for="exampleInputEmail1" class="form-label"></label>Faz uso de medicações:
+            <input disabled type="Text" class="form-control" id="medSaud" name="especiMedPia">
+          </div>
+          <div class="mb-48">
+            <label for="exampleInputEmail1" class="form-label"></label>É dependente químico?:
+            <select class="form-select" aria-label="Default select example" id="dpQuiPIA" onChange="upDep()">
+              <option selected>Selecionar</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+          <div class="mb-49">
+            <label for="exampleInputEmail1" class="form-label"></label>Quais drogas?:
+            <input disabled type="Text" class="form-control" id="inputDrogas" name="QuaisDrogPia">
+          </div>
+          <div class="mb-49">
+            <label for="exampleInputEmail1" class="form-label"></label>Tempo que encontra-se em situação de rua:
+            <input type="Text" class="form-control" id="inputcompro" name="tempoRuaPia">
+          </div>
+          <div class="mb-50">
+            <label for="exampleInputEmail1" class="form-label"></label>Motivo:
+            <select class="form-select" aria-label="Default select example" id="motivoRuaPIA">
+              <option selected>Selecionar</option>
+              <option value="Perda de moradia">Perda de moradia</option>
+              <option value="Ameaça/Violência">Ameaça/Violência</option>
+              <option value="Alcoolismo/Drogas">Alcoolismo/Drogas</option>
+              <option value="Problemas com familiares/Companheiro(a)">Problemas com familiares/Companheiro(a)</option>
+              <option value="Desemprego">Desemprego</option>
+              <option value="Trabalho">Trabalho</option>
+              <option value="Tratamento de saúde">Tratamento de saúde</option>
+              <option value="Preferência/Opção própria">Preferência/Opção própria</option>
+              <option value="Não sabe/Não Lembra">Não sabe/Não Lembra</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="mb-51">
+            <label for="exampleInputEmail1" class="form-label"></label>Procedencia:
+            <input type="Text" class="form-control" id="inputcompro" name="procedenciaPia">
+          </div>
+          <div class="mb-52">
+            <label for="exampleInputEmail1" class="form-label"></label>Esteve em outros centros de acolhida?
+            <input type="Text" class="form-control" id="inputcompro" name="outrosAcoPia">
+          </div>
+          <div class="mb-53">
+            <label for="exampleInputEmail1" class="form-label"></label>Possuí comprometimento judicial?
+            <select class="form-select" aria-label="Default select example" id="juridicoPIA" onChange="update()">
+              <option selected>Selecionar</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+          <div class="mb-54">
+            <label for="exampleInputEmail1" class="form-label"></label>Qual?
+            <input disabled type="Text" class="form-control" id="inputJudicial" name="qualJudiciPia">
+          </div>
+          <div class="mb-55">
+            <label for="exampleInputEmail1" class="form-label"></label>Proposta Inicial:
+            <input type="Text" class="form-control" id="inputcompro" name="propostaIniPia">
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button onclick="salvarAss()" type="button" class="btn btn-primary">Salvar Doação</button>
+          <button onclick="fecharModal()" type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar Cadastro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">ReVirar</div>
+            <i class="bi bi-list" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <i class="bi bi-search"></i>
+           <input type="text" placeholder="Search...">
+           <span class="tooltip">Search</span>
+        </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-clipboard-check"></i>
+              <span class="links_name">Fichas</span>
+            </a>
+             <span class="tooltip">Fichas</span>
+          </li>
+          <li>
+           <a href="#">
+            <i class="bi bi-archive"></i>
+             <span class="links_name">Formulários</span>
+           </a>
+           <span class="tooltip">Formulários</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-heart-fill"></i>
+             <span class="links_name">Doações</span>
+           </a>
+           <span class="tooltip">Doações</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-calendar-date"></i>
+             <span class="links_name">Eventos</span>
+           </a>
+           <span class="tooltip">Eventos</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-folder"></i>
+             <span class="links_name">Relatórios</span>
+           </a>
+           <span class="tooltip">Relatórios</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-map"></i>
+             <span class="links_name">Mapa</span>
+           </a>
+           <span class="tooltip">Mapa</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-person-fill"></i>
+             <span class="links_name">Configurações</span>
+           </a>
+           <span class="tooltip">Configurações</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class="bi bi-box-arrow-left"></i>
+             <span class="links_name">Sair</span>
+           </a>
+           <span class="tooltip">Sair</span>
+         </li>
+         <li class="profile">
+             <div class="profile-details">
+               <div class="name_job">
+                 <div class="name">Revirar</div>
+                 <div class="job">Admin</div>
+               </div>
+             </div>
+             <i class="bi bi-box-arrow-left"></i>
+         </li>
+        </ul>
+      </div>
+      <section class="home-section">
+        <div class="container">
+          <div class="text">Fichas de Plano Individual de Atendimento</div>
+          <br>
+          <div class="novoUsuario">
+            <form class="inputSearchDiv">
+              <i class="bi bi-search"></i>
+                  <input onkeyup="searchFilter()" class="inputSearch" type="search" id="inputSearchID" placeholder="Pesquisar Ficha">
+            </form>
+          <button onclick="buttonNewAss()" id="buttonnew" class="buttonNew"><p><i class="bi bi-plus-circle-fill"></i>Nova ficha</p></button>
+          </div>
+          <br>
+          <table class="table" id="table">
+            <thead class="thead-warning">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Data de Nascimento</th>
+                <th scope="col">RG</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Edição</th>
+              </tr>
+            </thead>
+            <tbody id="table-body-pia">
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <div id="modalViewPIA"></div>
+      <div id="modalEditPIA"></div>
+      <script src="../js/fichaPiaAdmin.js"></script>
+</body>
+</html>

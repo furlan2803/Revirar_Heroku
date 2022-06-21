@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "64c18b11-7906-4519-83a5-147304cd9c58",
+		"name": "REVIRAR-FICHA_ATENDIMENTO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-FichaAtendimento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloAtendi",
+							"value": "1° encontro",
+							"type": "text"
+						},
+						{
+							"key": "observacaoAtendi",
+							"value": "Quer sair das ruas e continuar com acompanhamneto",
+							"type": "text"
+						},
+						{
+							"key": "dataAtendi",
+							"value": "25/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "horaAtendi",
+							"value": "19:00",
+							"type": "text"
+						},
+						{
+							"key": "IDEncaminhamento",
+							"value": "155",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoselect"
+					]
+				},
+				"description": "O código é utilizado para vizualizar a tabela Ficha Atendimento"
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-FichaAtendimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloAtendi",
+							"value": "1° encontro",
+							"type": "text"
+						},
+						{
+							"key": "observacaoAtendi",
+							"value": "Quer sair das ruas e continuar com acompanhamneto",
+							"type": "text"
+						},
+						{
+							"key": "dataAtendi",
+							"value": "25/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "horaAtendi",
+							"value": "19:00",
+							"type": "text"
+						},
+						{
+							"key": "IDEncaminhamento",
+							"value": "155",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoinsert"
+					]
+				},
+				"description": "O código é utilizado para inserir um novo atendimento"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-FichaAtendimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloAtendi",
+							"value": "2° Encontro",
+							"type": "text"
+						},
+						{
+							"key": "IDAtendimento",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoupdate"
+					]
+				},
+				"description": "Esse código é utilizado para atualizar dados da tabela."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-FichaAtendimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDAtendimento",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentodelete"
+					]
+				},
+				"description": "Esse código é utilizado para excluir uma linha na tabela."
+			},
+			"response": []
+		}
+	]
+}

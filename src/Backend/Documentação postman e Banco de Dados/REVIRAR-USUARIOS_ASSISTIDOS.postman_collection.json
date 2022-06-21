@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "1198d8cf-42d3-4db6-a84d-0a0a0c77654b",
+		"name": "REVIRAR-USUARIOS_ASSISTIDOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-USUARIOS_ASSISTIDOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/usersassistidos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"usersassistidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-USUARIOS_ASSISTIDOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDFichaAbordagem",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "IDFichaCadastro",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "IDFichaFrequencia",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "IDFichaPIA",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "IDAtendimento",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "IDToalha",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/userassistidosinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"userassistidosinsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-USUARIOS_ASSISTIDOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDAssistidos",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/userassistidosdelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"userassistidosdelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

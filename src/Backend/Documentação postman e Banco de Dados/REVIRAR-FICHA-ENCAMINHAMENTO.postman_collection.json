@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "b9fa1566-7531-44fa-9d9b-07ec20a21b84",
+		"name": "REVIRAR-FICHA-ENCAMINHAMENTO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-ENCAMINHAMENTO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/encaminhamentoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"encaminhamentoselect"
+					]
+				},
+				"description": "seleciona uma parte específica da tabela "
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-ENCAMINHAMENTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "servEnca",
+							"value": "poupatempo",
+							"type": "text"
+						},
+						{
+							"key": "dataEnca",
+							"value": "26/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "obsEnca",
+							"value": "1 via RG",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/encaminhamentoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"encaminhamentoinsert"
+					]
+				},
+				"description": "inseri na tabela o encaminhamento do assistido"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-ENCAMINHAMENTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "obsEnca",
+							"value": "2 via RG",
+							"type": "text"
+						},
+						{
+							"key": "IdEncaminhamento",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/encaminhamentoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"encaminhamentoupdate"
+					]
+				},
+				"description": "Inseri uma atualização na tabela"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-ENCAMINHAMENTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdEncaminhamento",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/encaminhamentodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"encaminhamentodelete"
+					]
+				},
+				"description": "Deleta uma parte da tabela "
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "a3f5426e-c883-479f-81dc-b77e85fe7672",
+		"name": "REVIRAR-FICHA_FREQUENCIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-FICHA_FREQUENCIA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/fichafrequenciaselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"fichafrequenciaselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-FICHA_FREQUENCIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dataFreq",
+							"value": "26/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "horarioFreq",
+							"value": "15:33",
+							"type": "text"
+						},
+						{
+							"key": "nomeFreq",
+							"value": "Gustavo Monteiro",
+							"type": "text"
+						},
+						{
+							"key": "banhoFreq",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "lancheFreq",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "roupaFreq",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "cestaBaFreq",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "TransFreq",
+							"value": "NÃO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/fichafrequenciainsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"fichafrequenciainsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-FICHA_FREQUENCIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dataFreq",
+							"value": "27/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "IDFrequencia",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/fichafrequenciaupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"fichafrequenciaupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-FICHA_FREQUENCIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDFrequencia",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/fichafrequenciadelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"fichafrequenciadelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

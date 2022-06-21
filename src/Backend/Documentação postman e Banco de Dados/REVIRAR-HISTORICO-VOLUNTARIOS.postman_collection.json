@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "a13090b0-43df-42da-8f09-b6e18604b868",
+		"name": "REVIRAR-HISTORICO-VOLUNTARIOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-HIstorico-voluntarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/historicovoluntariosselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"historicovoluntariosselect"
+					]
+				},
+				"description": "seleciona algo específico da tabela "
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-HIstorico-voluntarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloHisVol",
+							"value": "participação na recreação",
+							"type": "text"
+						},
+						{
+							"key": "dataHisVol",
+							"value": "26/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "duracaoHisVol",
+							"value": "2 horas",
+							"type": "text"
+						},
+						{
+							"key": "IDPerfil",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/historicovoluntariosinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"historicovoluntariosinsert"
+					]
+				},
+				"description": "inseri algo na tebalado histórico dos voluntários "
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-Historico-voluntarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloHisVol",
+							"value": "Participação da atividade com gesso",
+							"type": "text"
+						},
+						{
+							"key": "IDHistoricoVol",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/historicovoluntariosupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"historicovoluntariosupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-Historico-voluntarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDHistoricoVol",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/historicovoluntariosdelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"historicovoluntariosdelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

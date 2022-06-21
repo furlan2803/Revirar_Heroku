@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "accc696b-1df3-4f9b-b489-745b77438978",
+		"name": "REVIRAR-FICHA_ABORDAGEM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT_FICHA-ABORDAGEM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/abordagemusers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"abordagemusers"
+					]
+				},
+				"description": "código para visualizar todos os assistidos que possuem ficha de abordagem no sistema da instituição"
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT_FICHA-ABORDAGEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeAbo",
+							"value": "Bruno Otávio Bezeirra de Meira",
+							"type": "text"
+						},
+						{
+							"key": "chamadoAbo",
+							"value": "Bruno",
+							"type": "text"
+						},
+						{
+							"key": "origemAbo",
+							"value": "Carapicuiba",
+							"type": "text"
+						},
+						{
+							"key": "albergueAbo",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "qualAbergAbo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tempoRuaAbo",
+							"value": "2 Anos",
+							"type": "text"
+						},
+						{
+							"key": "IDMotivoAbo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "irProjetoAbo",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "quandoIrProjeAbo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "obsAbo",
+							"value": "Teste de cadastro de usuário",
+							"type": "text"
+						},
+						{
+							"key": "eduAbo",
+							"value": "Giovanna Furlan",
+							"type": "text"
+						},
+						{
+							"key": "dataAbo",
+							"value": "25/05/2022",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/abordageminsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"abordageminsert"
+					]
+				},
+				"description": "código para inserção de dados de um assistido na ficha de abordagem da instituição. "
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE_FICHA-ABORDAGEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeAbo",
+							"value": "Pedro de Assunção Esteves",
+							"type": "text"
+						},
+						{
+							"key": "IDAbordagem",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/abordagemupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"abordagemupdate"
+					]
+				},
+				"description": "código para alterar algum dado dos assistidos com ficha de abordagem ativa no banco de dados da instituição. "
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_FICHA-ABORDAGEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDAssistidos",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/abordagemdelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"abordagemdelete"
+					]
+				},
+				"description": "código para deletar os dados da ficha de abordagem de um assistido cadastrado na instituição. "
+			},
+			"response": []
+		}
+	]
+}

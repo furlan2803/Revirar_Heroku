@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "d875f28a-c72e-40dd-99f1-9abb91f43c14",
+		"name": "REVIRAR-FICHA_MOTIVO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-FICHA-MOTIVO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-FICHA-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "perdaMoraMoti",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "ameacaMoti",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "alcoolismoMoti",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "probleFamiMoti",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "desempregoMoti",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "trabalhoMoti",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "tratamentoSauMoti",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "preferenciaMoti",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "esqueceuMoti",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "outroMoti",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoinsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-FICHA-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "alcoolismoMoti",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "IDMotivoAbo",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-FICHA-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDMotivoAbo",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivodelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

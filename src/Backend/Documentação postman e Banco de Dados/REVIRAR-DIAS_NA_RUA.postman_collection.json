@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "539eaa57-d0bf-4952-a777-f34876402f3e",
+		"name": "REVIRAR-DIAS_NA_RUA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-NUMERO_DE_DIAS_NA_RUA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/numerodiasruaselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"numerodiasruaselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-NUMERO_DE_DIAS_NA_RUA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ruaNum",
+							"value": "M.M.D.C",
+							"type": "text"
+						},
+						{
+							"key": "albergueNum",
+							"value": "Santa Maria",
+							"type": "text"
+						},
+						{
+							"key": "domicilioPartNum",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "outroNum",
+							"value": "sim",
+							"type": "text"
+						},
+						{
+							"key": "outroQualNum",
+							"value": "Praças",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/numerodiasruainsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"numerodiasruainsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-NUMERO_DE_DIAS_NA_RUA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ruaNum",
+							"value": "Santa Clara",
+							"type": "text"
+						},
+						{
+							"key": "IDNumeroDiasRua",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/numerodiasruaupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"numerodiasruaupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-NUMERO_DE_DIAS_NA_RUA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDNumeroDiasRua",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/numerosdiasruadelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"numerosdiasruadelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "6c03771f-c5e7-4578-835c-3f6b196d9623",
+		"name": "REVIRAR-DOACAO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-DOACAO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/doacaoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"doacaoselect"
+					]
+				},
+				"description": "Código usado para visualizar as doações da tabela de doações."
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-DOACAO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tituloDoacao",
+							"value": "Doação Julio Nascimento",
+							"type": "text"
+						},
+						{
+							"key": "descricaoDoacao",
+							"value": "5 peças de roupa, 10 produtos de higiene e 5kilos de arroz.",
+							"type": "text"
+						},
+						{
+							"key": "dataDoacao",
+							"value": "25/05/2022",
+							"type": "text"
+						},
+						{
+							"key": "valorDoacao",
+							"value": "Somando todos os itens o valor da doação é de R$120,00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/doacaoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"doacaoinsert"
+					]
+				},
+				"description": "Código usado para inserir nova doação na tabela de doações."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-DOACAO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descricaoDoacao",
+							"value": "9 peças de roupa, 15 produtos de higiene e 6 kilos de arroz.",
+							"type": "text"
+						},
+						{
+							"key": "IDDoacao",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/doacaoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"doacaoupdate"
+					]
+				},
+				"description": "Código usado para atualizar descrição da doação na tabela de doação."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-DOACAO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDDoacao",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/doacaodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"doacaodelete"
+					]
+				},
+				"description": "Código usado para deletar linha na tabela de doação."
+			},
+			"response": []
+		}
+	]
+}

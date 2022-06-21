@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4918f2ce61.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Revirar</title>
+</head>
+<body>
+    <header id="header"> <!-- esse header contém a barra de navegação do site -->
+        <div id="nav" class="center-menu">
+            <div class="logo">
+                <h2>re<b>virar</b></h2> <!-- nome do projeto  -->
+            </div>
+            <button id="btn"> .
+              <span id="hamburguer"></span>
+          </button>
+            <ul id="menu" class="nav nav-pills"> <!-- essa lista contém as páginas do site -->
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>  
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="eventos.html">Eventos</a>
+                  </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="voluntariad.html">Voluntariado</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="transparencia.html">Transparência</a>
+                </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
+              </li>
+
+              <li>
+                <button type=“button” class="nav-item btn btn-primary menu-give-button"><a class="menu-give-button" href="../páginas/doacao.html">Doe agora</a></button>
+              </li>
+    
+            </ul>
+        </div>
+    </header>
+
+    <section class="text-home-Vol"> <!-- essa section contém o título da página e um texto informativo -->
+        <div>
+            <p><h1>Voluntariado</h1></p>
+        </div>
+        <div>
+            <p>
+                O voluntário é aquele que doa seu tempo, trabalho e talento em prol de uma causa de interesse social, comunitário e em que acredita. Visando com isso melhorar a qualidade de vida da comunidade. O voluntário pode escolher dentro do Projeto Revirar como deseja oferecer o seu tempo, podendo ser auxílio na rotina diária como: ajudar a servir o lanche para os atendidos, a separar roupas do bazar para entregar para quem precisa realizar troca após o banho, ajudar na limpeza e organização do Projeto, na organização do nosso bazar de doações, pode ser voluntário na abordagem social de rua, ajudar em eventos pontuais ou ainda caso possua algum talento específico pode oferecer atividades/oficinas como: artesanato, desenho, pintura, musicalização, jogos ou recreação. Nossa equipe é aberta à idéias e podemos decidir juntos como você pode se tornar um voluntário!
+            </p>
+        </div>
+    </section>
+        <section class="backVol"> <!-- essa section contém cada card de imagem das possíveis funções que um voluntário pode exercer (os cards foram pegos do bootstrap) - importante comentar que todos os cards possuem a mesma estrutura -->             
+            <div class="container my-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/oficina.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Oficinas</h4>
+                                            </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="buttonDiv"> <!-- cada card tem um botão de inscrição, no qual, ao ser clicado, direciona o voluntário para um formulário -->
+                                        <button class="buttonVol" type="submit"> <a href="form_oficinaVol.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/cantina.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Assistência na cantina</h4>
+                                            </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="buttonDiv">
+                                        <button class="buttonVol" type="submit"> <a href="formVoluntario.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/horta3.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Cuidar da horta</h4>
+                                            </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="buttonDiv">
+                                        <button class="buttonVol" type="submit"> <a href="formVoluntario.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/bazar.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Organizar o bazar</h4>
+                                            </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="buttonDiv">
+                                        <button class="buttonVol" type="submit"> <a href="formVoluntario.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/org_atv2.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Organizador de atividade</h4>
+                                            </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="buttonDiv">
+                                        <button class="buttonVol" type="submit"> <a href="formVoluntario.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img src="../assets/img/cabelereiro3.jpg" class="d-block w-100 Volimg" alt="...">
+                                            <div class="carousel-caption d-md-block">
+                                                <h4 class="VolText">Cabelereiro</h4>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="buttonDiv">
+                                        <button class="buttonVol" type="submit"> <a href="formVoluntario.html" class="buttonVol">Inscreva-se </a></button>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <br>
+        <section class="text-home-Vol2"> <!-- essa section possui o código de um formulário de inscrição geral (para os voluntários que não se ) -->
+          <div class="container my-5">
+
+            <div class="titles">
+                <h1 id="title"> Inscreva-se </h1>
+                <h4 id="caption"> Outras Categorias </h4>
+                <br>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                        <div class="campos">
+                            <div class="campo">
+                                <label for="nomeCompleto"> Nome Completo* </label>
+                                <input type="text" name="nomeCompleto" id="Nome" placeholder="Seu nome" required>
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="contato"> E-mail ou telefone* </label>
+                                <input type="email" name="contato" id="TelefoneEmail" placeholder="Seu contato" required>
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="função"> Função desejada* </label>
+                                <input type="text" name="funcao" id="IDFuncao" placeholder="Função Desejada" required>        
+                            </div>
+                            <br>
+                            <div class="buttonDiv3"> <!-- esse botão serve para a pessoa enviar o formulário, e, em seguida, um modal aparece para confirmar o envio -->
+                                <button type="button" class="btn botão" onclick="salvarAssAbo()">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    </section>
+
+    <section class="videoaboutrevirar VolVideos"> <!-- essa section armaezna os vídeos de relatos de voluntários e uma pequena descrição -->
+        <div class="container">
+            <h3>Relatos de Voluntários</h3>
+        </div>
+        <br>
+        <div class="row"> <!-- essa div armazena os dois vídeos e deixa eles responsíveis de acordo com o tamanho da tela -->
+            <div class="col-sm-12 col-lg-6 video-responsive-Vol">
+                <iframe src="https://www.youtube.com/embed/YztdQAP6sNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p> Relato de Rúbia Gomes - 26/05/2022 </p>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 video-responsive-Vol">
+                <iframe src="https://www.youtube.com/embed/pY1tEHhnv50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p> Relato de Paty - 02/06/2022 </p>
+            </div>
+        </div> 
+    </section>
+
+    <footer id="myFooter"> <!-- essa footer contém os elementos do rodapé -->
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="logo-image"><a href="../páginas/index.html"> <img class="logo-img" src="../assets/img/logo.png"> </a></h2>
+            </div>
+            <div class="home2 col-sm-2">
+                <h5>Inicio</h5>
+                <ul> <!-- lista de navegação das páginas (com excessão da de doação)-->
+                    <li><a href="../páginas/index.html"><img class="arrow" src="../assets/img/arrow_icon.png"> Home</a></li>
+                    <li><a href="../páginas/sobre.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Sobre</a></li>
+                    <li><a href="../páginas/voluntariad.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Voluntariado</a></li>
+                    <li><a href="../páginas/parceiras.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Empresas</a></li>
+                    <li><a href="../páginas/transparencia.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Transparência</a></li>
+                </ul>
+            </div>
+            <div class="home3 col-sm-2">
+                <h5>Doações</h5>
+                <ul> <!-- lista dos subtítulos da página de doação -->
+                    <li><a href="../páginas/doacao.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Dinheiro</a></li>
+                    <li><a href="../páginas/doacao.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Alimentos</a></li>
+                    <li><a href="../páginas/doacao.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Roupas</a></li>
+                    <li><a href="../páginas/doacao.html"><img class="arrow" src="../assets/img/arrow_icon.png">  Produto de Higiêne</a></li>
+                </ul>
+            </div>
+            <div class="home4 col-sm-3">
+
+                <div class="text-redes-sociais">
+                  <p>
+                    Siga o projeto Revirar nas Redes Sociais!
+                  </p>
+                </div>
+                <div class="social-networks"> <!-- div dos links das redes sociais -->
+                    <a href="https://www.facebook.com/projetorevirar" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/projetorevirar/" class="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+                <a href="../páginas/contato.html">
+                    <button type="button" class="btn btn-default">Contato</button>
+                </a>
+                <a href="../páginas_Adm/login2.html">
+                    <button type="button" class="adm btn-default"><i class="fa-solid fa-lock"></i></button>
+                </a>
+            </div>
+        </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <p>© 2022 Copyright - Projeto Revirar</p>
+      </div>
+  </footer>
+
+</body>
+<script src="../js/formularioVoluntarios.js"></script>
+<script src="../js/style.js"></script>
+</html>

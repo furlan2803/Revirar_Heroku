@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "3123f504-f847-4b0d-b65f-9145954b6746",
+		"name": "REVIRAR-MOTIVO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20667286"
+	},
+	"item": [
+		{
+			"name": "INSERT-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "perdaMoraMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "ameacaMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "alcoolismoMoti",
+							"value": "Sim, com a bebida Vodka.",
+							"type": "text"
+						},
+						{
+							"key": "probleFamiMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "desempregoMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "trabalhoMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "tratamentoSauMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "preferenciaMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "esqueceuMoti",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "outroMoti",
+							"value": "Não",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoinsert"
+					]
+				},
+				"description": "Código para inserir motivo de assistidos na tabela."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDMotivoAbo",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivodelete"
+					]
+				},
+				"description": "Código para deletar linha da tabela motivo do assistido estar nas ruas."
+			},
+			"response": []
+		},
+		{
+			"name": "SELECT-MOTIVO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoselect"
+					]
+				},
+				"description": "Código para visualizar os motivos dos assistidos na tabela."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-MOTIVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDMotivoAbo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "alcoolismoMoti",
+							"value": "Sim, com a bebida Vodka e Corote.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/motivoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"motivoupdate"
+					]
+				},
+				"description": "Código usado para atualizar itens na tabela de motivo."
+			},
+			"response": []
+		}
+	]
+}

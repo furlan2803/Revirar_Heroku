@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "6a9e15ac-35bb-4983-b8af-c89de1846225",
+		"name": "REVIRAR-FICHA-ATENDIMENTO_EXTERNO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-ATENDIMENTO-EXTERNO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoexternoselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoexternoselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-ATENDIMENTO_EXTERNO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CRAS",
+							"value": "Sim",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoexternoinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoexternoinsert"
+					]
+				},
+				"description": "Esse código é utilizado para inserir um tipo de atendimento na ficha de atendimento."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-ATENDIMENTO_EXTERNO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CRAS",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "IDAtendimentoExterno",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoexternoupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoexternoupdate"
+					]
+				},
+				"description": "Uso de código para atualizar o tipo de cadastro na ficha de atendimento externo."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-ATENDIMENTO_EXTERNO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDAtendimentoExterno",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/atendimentoexternodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"atendimentoexternodelete"
+					]
+				},
+				"description": "Uso de código para deletar linha na tabela de atendimento Externo."
+			},
+			"response": []
+		}
+	]
+}

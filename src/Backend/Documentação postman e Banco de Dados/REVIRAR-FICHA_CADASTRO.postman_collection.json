@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "e72d2297-d25f-43c5-81e1-ce4e368bf00a",
+		"name": "REVIRAR-FICHA_CADASTRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-FICHA_CADASTRO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/cadastrousers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"cadastrousers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-FICHA_CADASTRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeCad",
+							"value": "Bruno Meira",
+							"type": "text"
+						},
+						{
+							"key": "chamadoCad",
+							"value": "Bruno",
+							"type": "text"
+						},
+						{
+							"key": "documentoCad",
+							"value": "sim",
+							"type": "text"
+						},
+						{
+							"key": "rgDocCad",
+							"value": "737737373",
+							"type": "text"
+						},
+						{
+							"key": "cpfDocCad",
+							"value": "737383739",
+							"type": "text"
+						},
+						{
+							"key": "nascimentoCad",
+							"value": "30/05/2003",
+							"type": "text"
+						},
+						{
+							"key": "IDLocais",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "abrigoCad",
+							"value": "não",
+							"type": "text"
+						},
+						{
+							"key": "domPartCad",
+							"value": "não",
+							"type": "text"
+						},
+						{
+							"key": "IDNumRua",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tempRuaCad",
+							"value": "2 anos",
+							"type": "text"
+						},
+						{
+							"key": "IDMotivoCad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tempcidCad",
+							"value": "não sabe",
+							"type": "text"
+						},
+						{
+							"key": "familiaCad",
+							"value": "não sabe",
+							"type": "text"
+						},
+						{
+							"key": "cttParenteCad",
+							"value": "não tem",
+							"type": "text"
+						},
+						{
+							"key": "attCad",
+							"value": "não tem",
+							"type": "text"
+						},
+						{
+							"key": "IDAtendeCad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "carteiraCad",
+							"value": "não sabe",
+							"type": "text"
+						},
+						{
+							"key": "IDDinheiro",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "benefCad",
+							"value": "não tem",
+							"type": "text"
+						},
+						{
+							"key": "qualBenefCad",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/cadastroinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"cadastroinsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-FICHA_CADASTRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeCad",
+							"value": "Mariana Souza",
+							"type": "text"
+						},
+						{
+							"key": "IDCadastro",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/cadastroupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"cadastroupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-FICHA_CADASTRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDCadastro",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/cadastrodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"cadastrodelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

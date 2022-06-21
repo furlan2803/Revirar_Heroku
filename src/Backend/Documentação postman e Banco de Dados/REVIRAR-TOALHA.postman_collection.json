@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "4c9c506a-e7fb-4238-aa2b-08a32ccf843b",
+		"name": "REVIRAR-TOALHA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-TOALHA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/selecttoalha",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"selecttoalha"
+					]
+				},
+				"description": "Esse código é utilizado para vizualizar a tabela toalha"
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-TOALHA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroToalha",
+							"value": "63",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/toalhainsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"toalhainsert"
+					]
+				},
+				"description": "Esse código é utilizado para inserir o número da toalha da toalha."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-TOALHA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDToalha",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/toalhadelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"toalhadelete"
+					]
+				},
+				"description": "Esse código é utilizado para deletar linha da tabela toalha."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-TOALHA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroToalha",
+							"value": "122",
+							"type": "text"
+						},
+						{
+							"key": "IDToalha",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/toalhaupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"toalhaupdate"
+					]
+				},
+				"description": "Esse código é utilizado para atualizar o número da toalha na tabela toalha."
+			},
+			"response": []
+		}
+	]
+}

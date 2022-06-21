@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "ce46d50a-30fc-403c-b395-5061d7d5b211",
+		"name": "REVIRAR-PIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-PIA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/piaselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"piaselect"
+					]
+				},
+				"description": "Código usado para visualizar as fichas PIA´s dos assistidos."
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-PIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomePIA",
+							"value": "Jorge Batista",
+							"type": "text"
+						},
+						{
+							"key": "nomeSocPIA",
+							"value": "Jorginho",
+							"type": "text"
+						},
+						{
+							"key": "tecPIA",
+							"value": "Patricia Belarmino",
+							"type": "text"
+						},
+						{
+							"key": "datanascPIA",
+							"value": "12/06/1980",
+							"type": "text"
+						},
+						{
+							"key": "localPIA",
+							"value": "Brás",
+							"type": "text"
+						},
+						{
+							"key": "sexoPIA",
+							"value": "Masculino",
+							"type": "text"
+						},
+						{
+							"key": "racaPIA",
+							"value": "Branco",
+							"type": "text"
+						},
+						{
+							"key": "filiacaoPIA",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "estadoCivilPIA",
+							"value": "Casado",
+							"type": "text"
+						},
+						{
+							"key": "profissaoPIA",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "attProfPIA",
+							"value": "Catador de reciclaveis",
+							"type": "text"
+						},
+						{
+							"key": "empresaPIA",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "beneficioPIA",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "valorBenePIA",
+							"value": "Não Aplicavel",
+							"type": "text"
+						},
+						{
+							"key": "deficienciaPIA",
+							"value": "Visual",
+							"type": "text"
+						},
+						{
+							"key": "depQuimicoPIA",
+							"value": "Álcool",
+							"type": "text"
+						},
+						{
+							"key": "centAcolhiPIA",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "comproJudiPIA",
+							"value": "Não",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/piainsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"piainsert"
+					]
+				},
+				"description": "Código para adicionar nova ficha de PIA para assistido na tabela."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-PIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDPIA",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/piadelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"piadelete"
+					]
+				},
+				"description": "Código para deletar linha da tabela Ficha Pia de algum assistido."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-PIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDPIA",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nomeSocPIA",
+							"value": "Jorjão",
+							"type": "text"
+						},
+						{
+							"key": "tecPIA",
+							"value": "Soraya",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/piaupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"piaupdate"
+					]
+				},
+				"description": "Código para alterar tecnico e nome social do assistido na ficha PIA."
+			},
+			"response": []
+		}
+	]
+}

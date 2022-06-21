@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "341ab666-b9f2-4cc1-993d-23615c05febd",
+		"name": "REVIRAR-USUARIOS_ADM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-USUARIOS-ADM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/usuariosamdselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"usuariosamdselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-USUARIOS-ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeCompletoADM",
+							"value": "Giovanna Furlan Torres",
+							"type": "text"
+						},
+						{
+							"key": "emailADM",
+							"value": "giovanna@revirar.com",
+							"type": "text"
+						},
+						{
+							"key": "senha",
+							"value": "2203Teste",
+							"type": "text"
+						},
+						{
+							"key": "telefone",
+							"value": "(11) 98401-8719",
+							"type": "text"
+						},
+						{
+							"key": "IDPerfil",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/usuarioadminsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"usuarioadminsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-USUARIOS-ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeCompletoADM",
+							"value": "Pedro De Assunção Esteves",
+							"type": "text"
+						},
+						{
+							"key": "IDUsuarioADM",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/usuariosadmupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"usuariosadmupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-USUARIOS-ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDUsuarioADM",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/usuariosadmdelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"usuariosadmdelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

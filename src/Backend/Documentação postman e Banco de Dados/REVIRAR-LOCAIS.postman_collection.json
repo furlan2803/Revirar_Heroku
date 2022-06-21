@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "93cd73dc-6ced-477c-b3ec-c37b82f0e603",
+		"name": "REVIRAR-LOCAIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20667286"
+	},
+	"item": [
+		{
+			"name": "INSERT-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "viadutoLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "predioppLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "parquesLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "tremLoca",
+							"value": "Sim, estação Julio Prestes.",
+							"type": "text"
+						},
+						{
+							"key": "rodoviasLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "construcoesLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "galeriaSubLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "casasAbanLoca",
+							"value": "Não",
+							"type": "text"
+						},
+						{
+							"key": "outrosLoca",
+							"value": "Não",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroinsert"
+					]
+				},
+				"description": "Código utilizado para inserir o local que o assistido foi abordado na tabela."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDLocais",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastrodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastrodelete"
+					]
+				},
+				"description": "Código usado para deletar linhas na tabela de locais."
+			},
+			"response": []
+		},
+		{
+			"name": "SELECT-LOCAIS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDLocais",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tremLoca",
+							"value": "Sim, estação Julio Prestes e na estação barra funda.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroupdate"
+					]
+				},
+				"description": "Código para atualizar dados da tabela de locais."
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "2c4e1579-8f2a-43b0-aa5c-0561e76900a8",
+		"name": "REVIRAR-LOCAIS_CADASTRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20586643"
+	},
+	"item": [
+		{
+			"name": "SELECT-LOCAIS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroselect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroselect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "viadutoLoca",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "predioppLoca",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "parquesLoca",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "tremLoca",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "rodoviasLoca",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "construcoesLoca",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "galeriaSubLoca",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "casasAbanLoca",
+							"value": "NÃO",
+							"type": "text"
+						},
+						{
+							"key": "outrosLoca",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroinsert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroinsert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tremLoca",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "IDLocais",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastroupdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastroupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-LOCAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IDLocais",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3081/locaiscadastrodelete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3081",
+					"path": [
+						"locaiscadastrodelete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
