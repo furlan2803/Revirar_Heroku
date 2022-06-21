@@ -2,8 +2,8 @@
 const express = require('express'); 
 const app = express();
 const cors = require("cors");
-app.use(express.static("src/frontend/"));
-app.use(express.static("src/frontend/páginas"));
+app.use(express.static("src/Frontend/"));
+app.use(express.static("src/Frontend/paginas"));
 app.use(cors());
 
 const port = process.env.PORT || 3081;
