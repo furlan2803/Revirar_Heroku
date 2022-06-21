@@ -9,7 +9,7 @@ function fecharModalAbo() {
 const tableBody = document.querySelector("#table-body-abordagem");
 
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/abordagemusers",
+    url: "https://https://revirar-projeto4.herokuapp.com/abordagemusers",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -52,7 +52,7 @@ function salvarAssAbo() {
 
 
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/abordageminsert",
+        "url": "https://https://revirar-projeto4.herokuapp.com/abordageminsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -112,7 +112,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/abordagemdelete",
+        "url": "https://https://revirar-projeto4.herokuapp.com/abordagemdelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -131,7 +131,7 @@ function deleteAssistido(id){
 
 function viewAbo(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/abordagemusers",
+        url: "https://https://revirar-projeto4.herokuapp.com/abordagemusers",
         type: 'GET',
         success: data => {
          data.forEach(element => {
@@ -226,7 +226,7 @@ function fecharModalView(id) {
 
 function editAbo2(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/abordagemusers",
+        url: "https://https://revirar-projeto4.herokuapp.com/abordagemusers",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -373,7 +373,7 @@ function saveEditAbo(id){
 
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/abordagemupdate',
+        url: 'https://https://revirar-projeto4.herokuapp.com/abordagemupdate',
         data: {IDAbordagem: id, nomeAbo: inputcad1, chamadoAbo: inputcad2, origemAbo: inputcad3, albergueAbo: inputcad4, qualAbergAbo: inputcad5, tempoRuaAbo: inputcad6, IDMotivoAbo: inputcad7, irProjetoAbo: inputcad8, obsAbo: inputcad9, eduAbo: inputcad10, dataAbo: inputcad11},
     }).done(function () {
         // console.log("aq")

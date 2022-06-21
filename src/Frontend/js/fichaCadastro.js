@@ -22,7 +22,7 @@ function fecharModal() {
 const tableBody = document.querySelector("#table-body-cadastro");
 
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/cadastrousers",
+    url: "https://revirar-projeto4.herokuapp.com/cadastrousers",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -102,7 +102,7 @@ function salvarAss() {
 
 
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/cadastroinsert",
+        "url": "https://revirar-projeto4.herokuapp.com/cadastroinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -252,7 +252,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/cadastrodelete",
+        "url": "https://revirar-projeto4.herokuapp.com/cadastrodelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -271,7 +271,7 @@ function deleteAssistido(id){
 
 function viewCadastro(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/cadastrousers",
+        url: "https://revirar-projeto4.herokuapp.com/cadastrousers",
         type: 'GET',
         success: data => {
          data.forEach(element => {
@@ -580,7 +580,7 @@ function closemodal(id) {
 
 function editCadastro2(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/cadastrousers",
+        url: "https://revirar-projeto4.herokuapp.com/cadastrousers",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -1003,7 +1003,7 @@ function saveEditCad(id){
 
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/cadastroupdate',
+        url: 'https://revirar-projeto4.herokuapp.com/cadastroupdate',
         data: {IDCadastro: id, nomeCad: inputcad1, chamadoCad: inputcad2, docCad: inputcad3, rgCad: inputcad4, cpfCad: inputcad5, nascimentoCad: inputcad6, marqViaCad: inputcad34, predioCad: inputcad35, parqueCad: inputcad36, tremCad: inputcad37, rodoCad: inputcad38, construCad: inputcad39, galeriaCad: inputcad40, casaAbanCad: inputcad41, outrosLocaisCad: inputcad42, abrigoCad: inputcad8, domPartCad: inputcad9, ruaVezCad: inputcad10, albVezCad: inputcad11, dompartvezCad: inputcad12,  dompartQual: inputcad13, viveRuaCad: inputcad14, moradiaCad: inputcad43, ameacaCad: inputcad44, drogasCad: inputcad45, familiaCad: inputcad46, desemCad: inputcad47, trabalhoCad: inputcad48, saudeCad: inputcad49, opcaoCad: inputcad50, nsabeCad: inputcad51, outroMotiCad: inputcad52, moraCidaCad: inputcad15, viveFamCad: inputcad16, parenteCad: inputcad17, attcomCad: inputcad18, atendLuCad:inputcad19, centroCad: inputcad20, centrorefCad: inputcad21, instacolhiCad: inputcad22, hospiCad: inputcad23, trabaCad: inputcad24, dinheiroCad: inputcad25, dinheiroCad2: inputcad26, dinheiroCad3: inputcad27, dinheiroCad4: inputcad28,  dinheiroCad5: inputcad29, dinheiroCad6: inputcad30, dinheiroCad7: inputcad31, benefCad: inputcad32, qualBenefCad: inputcad33},
     }).done(function () {
         // console.log("aq")

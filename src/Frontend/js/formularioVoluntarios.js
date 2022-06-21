@@ -29,7 +29,7 @@ btn.addEventListener('touchstart', menu);
 const tableBody = document.querySelector("#table-body-form");
 
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/formselect",
+    url: "https://revirar-projeto4.herokuapp.com/formselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -98,7 +98,7 @@ function salvarAssAbo() {
    const IDFuncao  = document.getElementById("IDFuncao").value;
 
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/forminsert",
+        "url": "https://revirar-projeto4.herokuapp.com/forminsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -149,7 +149,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/formdelete",
+        "url": "https://revirar-projeto4.herokuapp.com/formdelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -194,7 +194,7 @@ function searchFilter() {
 function editform(id) {
     console.log(id);
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/formselect",
+        url: "https://revirar-projeto4.herokuapp.com/formselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -237,7 +237,7 @@ function editVal(id) {
 
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/formupdate',
+        url: 'https://revirar-projeto4.herokuapp.com/formupdate',
         data: {IDform: id, obsForm: editform},
     }).done(function () {
         console.log("aq")
@@ -260,7 +260,7 @@ function editVal(id) {
 
 function viewform(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/formselect",
+        url: "https://revirar-projeto4.herokuapp.com/formselect",
         type: 'GET',
         success: data => {
          data.forEach(element => {

@@ -129,7 +129,7 @@ function fecharModal() {
 const tableBodyy = document.querySelector("#table-body-doacao");
 
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/doacaoselect",
+    url: "https://revirar-projeto4.herokuapp.com/doacaoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -170,7 +170,7 @@ function salvarAss() {
 
 
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/doacaoinsert",
+        "url": "https://revirar-projeto4.herokuapp.com/doacaoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -219,7 +219,7 @@ function fecharModall() {
 function deletedoc(id) {
         $.ajax({
             type: 'POST',
-            url: "revirar-projeto4.herokuapp.com/doacaodelete",
+            url: "https://revirar-projeto4.herokuapp.com/doacaodelete",
             data: {IDDoacao: id},
         })
     }
@@ -255,7 +255,7 @@ function editVal(id) {
     var yr = document.getElementById('edittt').value;
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/doacaoupdate',
+        url: 'https://revirar-projeto4.herokuapp.com/doacaoupdate',
         data: {IDDoacao: id, valorDoacao: yr},
     }).done(function () {
         console.log("aq")
@@ -273,7 +273,7 @@ function editVal(id) {
 
 function viewDoacao(id) {
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/doacaoselect",
+        url: "https://revirar-projeto4.herokuapp.com/doacaoselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {

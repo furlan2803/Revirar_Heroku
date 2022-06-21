@@ -9,7 +9,7 @@ function fecharModal() {
 
 const encaminhamento = document.querySelector("#tabela-encaminhamento");
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/encaminhamentoselect",
+    url: "https://revirar-projeto4.herokuapp.com/encaminhamentoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -38,7 +38,7 @@ function saveEnca() {
 
 
     var settings = {
-        "url":"revirar-projeto4.herokuapp.com/encaminhamentoinsert",
+        "url":"https://revirar-projeto4.herokuapp.com/encaminhamentoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -54,7 +54,7 @@ function saveEnca() {
 
 function deleteEnca(id) {
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/encaminhamentoselect",
+        url: "https://revirar-projeto4.herokuapp.com/encaminhamentoselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -90,7 +90,7 @@ function fecharModall(id) {
 function deleteEnc(id) {
     $.ajax({
         type: 'POST',
-        url: "revirar-projeto4.herokuapp.com/encaminhamentodelete",
+        url: "https://revirar-projeto4.herokuapp.com/encaminhamentodelete",
         data: {IdEncaminhamento: id},
     })
     $('#myModal' + id).modal('hide');
@@ -99,7 +99,7 @@ function deleteEnc(id) {
 
 function editEnca(id) {
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/encaminhamentoselect",
+        url: "https://revirar-projeto4.herokuapp.com/encaminhamentoselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {
@@ -138,7 +138,7 @@ function editEnca2(id) {
     var gh = document.getElementById('obsEnca').value;
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/encaminhamentoupdate',
+        url: 'https://revirar-projeto4.herokuapp.com/encaminhamentoupdate',
         data: {IdEncaminhamento: id, obsEnca: gh},
     }).done(function () {
         console.log("aq")
@@ -173,7 +173,7 @@ function searchFilter() {
 
 function viewEnca(id) {
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/encaminhamentoselect",
+        url: "https://revirar-projeto4.herokuapp.com/encaminhamentoselect",
         type: 'GET',
         success: data => {
             data.forEach(element => {

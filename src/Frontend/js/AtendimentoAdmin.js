@@ -178,13 +178,13 @@ window.addEventListener('DOMContentLoaded', event => {
 const tableBodyAttendance = document.querySelector("#table-body-attendance");
 
 var settingsAttendance = {
-    "url":  "revirar-projeto4.herokuapp.com/atendimentoselect",
+    "url":  "https://revirar-projeto4.herokuapp.com/atendimentoselect",
     "method": "GET",
     "timeout": 0,
 };
 
 $.ajax({
-    url:  "revirar-projeto4.herokuapp.com/atendimentoselect",
+    url:  "https://revirar-projeto4.herokuapp.com/atendimentoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -232,7 +232,7 @@ function saveAttend() {
     const inputhoraAtendimento = document.querySelector("input[name='hora']").value;
 
     var settingsAttendance = {
-        "url": "revirar-projeto4.herokuapp.com/atendimentoinsert",
+        "url": "https://revirar-projeto4.herokuapp.com/atendimentoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -292,7 +292,7 @@ function closeModalAttendance2() {
 function deleteAttendance(id){
     console.log("o id é ", id)
     var settingsAttendii = {
-        "url": "revirar-projeto4.herokuapp.com/atendimentodelete",
+        "url": "https://revirar-projeto4.herokuapp.com/atendimentodelete",
         "method": "POST",
         "timeout": 0,
         "data": {"IDAtendimento": id},
@@ -374,7 +374,7 @@ function editAtendimento(id) {
     // var newHoraAtendi = document.getElementById('inputEditAtendi4').value
     $.ajax({
         type: 'POST',
-        url: 'revirar-projeto4.herokuapp.com/atendimentoupdate',
+        url: 'https://revirar-projeto4.herokuapp.com/atendimentoupdate',
         data: {IDAtendimento: id, tituloAtendi: editAttendances}
     }).done(function () {
         console.log("aq")

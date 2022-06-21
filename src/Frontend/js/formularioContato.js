@@ -29,7 +29,7 @@ btn.addEventListener('touchstart', menu);
 const tableBody = document.querySelector("#table-body-contato");
 
 $.ajax({
-    url: "revirar-projeto4.herokuapp.com/formcontatoselect",
+    url: "https://revirar-projeto4.herokuapp.com/formcontatoselect",
     type: 'GET',
     success: data => {
         data.forEach(element => {
@@ -96,7 +96,7 @@ function contatoform() {
    const assunto  = document.getElementById("assunto").value;
 
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/formcontatoinsert",
+        "url": "https://revirar-projeto4.herokuapp.com/formcontatoinsert",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -147,7 +147,7 @@ function fecharModal(id){
 function deleteAssistido(id){
     
     var settings = {
-        "url": "revirar-projeto4.herokuapp.com/formcontatodelete",
+        "url": "https://revirar-projeto4.herokuapp.com/formcontatodelete",
         "method": "POST",
         "timeout": 0,
         "data": {
@@ -165,7 +165,7 @@ function deleteAssistido(id){
 
 function viewform(id){
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/formcontatoselect",
+        url: "https://revirar-projeto4.herokuapp.com/formcontatoselect",
         type: 'GET',
         success: data => {
          data.forEach(element => {
