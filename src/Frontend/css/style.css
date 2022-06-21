@@ -1129,15 +1129,7 @@ input, button{
     /* width: 100%;
     height: 100%; */
     width:100%; 
-    height:100%
-  }
-  
-.card-footerr{
-
-}
-
-.card-bodyy{
-    
+    height:100%;
 }
 
 .alert {
@@ -1948,8 +1940,6 @@ input, button{
 }
 .wrapper .button:hover {
     width: 200px;
-
-
 }
 .wrapper .button .icon {
     display: inline-block;
