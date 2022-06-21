@@ -5,7 +5,7 @@ function login(){
     var password = document.getElementById("password").value;
 
     $.ajax({
-        url: "revirar-projeto4.herokuapp.com/loginselect",
+        url: "https://revirar-projeto4.herokuapp.com/loginselect",
         type: 'POST',
         data:{email: e_mail, senha: password},
         success: data => {
